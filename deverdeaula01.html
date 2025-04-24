@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events - Javascript</title>
+    <script src="counterInclement.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #hoverBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #hoverBox:hover {
+            background-color: deepskyblue;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #colorBox {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="HoverBox" onmouseover="incrementCounter()">Passe ao mouse</div>
+    <p id="CounterDisplay">Contador: 0</p>
+    <div id="colorBox" onmouseout="mudarCor()"> Passe e Saia</div>
+    <input type="text" name="name" id="name" >
+</body>
+
+</html>
