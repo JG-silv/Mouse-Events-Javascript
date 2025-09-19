@@ -25,5 +25,5 @@ This project is perfect for beginners who want to practice **DOM manipulation**,
 
 ## Author
 ```bash
-https://github.com//JG-silv
+https://github.com/JG-silv
 
